@@ -33,6 +33,12 @@ namespace Craswell.Automation.DataAccess
         /// </summary>
         /// <value>The transactions.</value>
         IList<IAccountTransaction> Transactions { get; }
+
+        /// <summary>
+        /// Gets the statements.
+        /// </summary>
+        /// <value>The statements.</value>
+        IList<IAccountStatement> Statements { get; }
     }
 }
 

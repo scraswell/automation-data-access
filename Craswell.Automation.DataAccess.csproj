@@ -52,6 +52,8 @@
     <Compile Include="TransactionType.cs" />
     <Compile Include="IAccountTransaction.cs" />
     <Compile Include="AccountTransactionData.cs" />
+    <Compile Include="AccountStatementData.cs" />
+    <Compile Include="IAccountStatement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -66,5 +68,6 @@
     <EmbeddedResource Include="Mappings\WebRepositoryData.hbm.xml" />
     <EmbeddedResource Include="Mappings\WebRepositoryConfigurationData.hbm.xml" />
     <EmbeddedResource Include="Mappings\AccountTransactionData.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AccountStatementData.xml" />
   </ItemGroup>
 </Project>

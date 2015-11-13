@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-mapping
+    xmlns="urn:nhibernate-mapping-2.2"
+    assembly="Craswell.Automation.DataAccess" 
+    namespace="Craswell.Automation.DataAccess">
+
+  <class name="AccountStatementData" table="statements">
+    <id name="Id" column="id" >
+      <generator class="native" />
+    </id>
+    <property name="Timestamp" column="timestamp" />
+    <property name="AccountNumber" column="account_number" />
+    <property name="FileName" column="filename" />
+  </class>
+
+</hibernate-mapping>

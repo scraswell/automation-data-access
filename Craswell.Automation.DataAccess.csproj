@@ -68,6 +68,6 @@
     <EmbeddedResource Include="Mappings\WebRepositoryData.hbm.xml" />
     <EmbeddedResource Include="Mappings\WebRepositoryConfigurationData.hbm.xml" />
     <EmbeddedResource Include="Mappings\AccountTransactionData.hbm.xml" />
-    <EmbeddedResource Include="Mappings\AccountStatementData.xml" />
+    <EmbeddedResource Include="Mappings\AccountStatementData.hbm.xml" />
   </ItemGroup>
 </Project>

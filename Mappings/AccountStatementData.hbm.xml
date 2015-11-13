@@ -10,7 +10,7 @@
     </id>
     <property name="Timestamp" column="timestamp" />
     <property name="AccountNumber" column="account_number" />
-    <property name="FileName" column="filename" />
+    <property name="FileName" column="file_name" />
   </class>
 
 </hibernate-mapping>

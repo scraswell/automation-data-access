@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-mapping
+    xmlns="urn:nhibernate-mapping-2.2"
+    assembly="Craswell.Automation.DataAccess" 
+    namespace="Craswell.Automation.DataAccess">
+
+  <class name="WebRepositoryConfigurationData" table="web_repository_configurations">
+    <id name="Id" column="id" >
+      <generator class="native" />
+    </id>
+    <property name="Address" column="address" />
+    <property name="Username" column="username" />
+    <property name="Password" column="password" />
+    <map name="SecurityQuestions" table="web_repository_security_questions" cascade="all">
+        <key column="web_repository_configuration_id" />
+        <index column="question" type="System.String" />
+        <element column="answer" type="System.String" />
+    </map>
+  </class>
+
+</hibernate-mapping>
